@@ -31,23 +31,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calculateBMI(View view) {
-        double heightValue =0;
+        double heightValue = 0;
         double weightValue = 0;
         String msg="";
 
-        if(!height.getText().toString().isEmpty()){
-            msg+= "Your height:" +heightValue +"\n";
+        if(!(height.getText().toString().isEmpty())){
              heightValue =Double.parseDouble(height.getText().toString());
+            msg+= "Your height:" +heightValue +"\n";
+
         }
-        if(!weight.getText().toString().isEmpty()){
-            msg+= "Your weight:" +weightValue +"\n";
+        if(!(weight.getText().toString().isEmpty())){
              weightValue = Double.parseDouble(weight.getText().toString());
+            msg+= "Your weight:" +weightValue +"\n";
 
         }
 
 
 
-        double value = weightValue / Math.pow(2,heightValue);
+        double value = weightValue / Math.pow(heightValue,2);
 if(gender.isChecked()){
     value+=0.05;
     msg+= "\n BMI=" + value ;
