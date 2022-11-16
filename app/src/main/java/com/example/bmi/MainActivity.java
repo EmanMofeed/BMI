@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         double value = weightValue / Math.pow(2,heightValue);
 if(gender.isChecked()){
     value+=0.05;
-    msg+= "\n BMI=" + value;
+    msg+= "\n BMI=" + value ;
 }
 result.setText(msg);
 
