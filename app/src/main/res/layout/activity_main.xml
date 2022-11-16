@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10pt"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/bmi_calculator"
+        android:textSize="34sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20pt"
+        android:textSize="10pt"
+        android:text="@string/enter_the_height_in_cn"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/purple_200"
+        android:textColorLink="@color/purple_200"
+        android:hint="@string/eg_161cm"
+        android:outlineSpotShadowColor="@color/purple_200"
+        android:id="@+id/height"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20pt"
+        android:textSize="10pt"
+        android:text="@string/enter_the_weight_in_kg"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/purple_200"
+        android:textColorLink="@color/purple_200"
+        android:hint="@string/_50_kg"
+        android:id="@+id/weight"
+       />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:textSize="10pt"
+        android:layout_gravity="center"
+        android:checked="false"
+        android:id="@+id/gender"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:layout_marginTop="10pt"
+        android:text="@string/calculate"
+        android:onClick="calculateBMI"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20pt"
+        android:id="@+id/result"
+        android:textSize="10pt"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

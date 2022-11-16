@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="enter_the_height_in_cn">Enter the height in cn</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="eg_161cm">eg. 161</string>
+    <string name="enter_the_weight_in_kg">Enter the weight in kg</string>
+    <string name="_50_kg">eg. 50</string>
+    <string name="calculate">Calculate</string>
+</resources>
